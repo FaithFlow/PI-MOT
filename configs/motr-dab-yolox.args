@@ -1,0 +1,23 @@
+--meta_arch motr_batch_dab_yolox
+--dataset_file e2e_dance
+--epoch 12
+--sigma 0.35
+--lr_drop 6 10
+--lr 1.2e-4
+--pretrained /home/member/data1/jsk/pretrained/DAB-DETR-R50-DC5-3P-checkpoint.pth
+--sample_mode random_interval
+--sample_interval 10
+--sampler_lengths 5
+--random_drop 0.0
+--fp_ratio 0.0
+--query_interaction_layer QIM
+--num_queries 300
+--dim_feedforward 2048
+--mot_path /home/member/data2/jsk/datasets
+--dec_layers 2
+--training_set Full
+--miss_tolerance 20
+--score_threshold 0.5
+--det_nms 0.7
+--qualified_threshold 0.5
+--seed 2024
